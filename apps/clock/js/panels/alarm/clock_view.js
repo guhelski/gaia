@@ -172,7 +172,7 @@ var ClockView = {
     this.setTransform('hour', hour);
 
     // Update aria label for analog view.
-    this.container.setAttribute('aria-label', Utils.getLocalizedTimeText(now));
+    this.container.setAttribute('data-l10n-id', Utils.getLocalizedTimeText(now));
 
     // update again in one second
     this.timeouts.analog = setTimeout(
